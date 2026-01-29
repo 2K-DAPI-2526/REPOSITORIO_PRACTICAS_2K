@@ -6,11 +6,21 @@ with open("alumnos.txt", "a") as fichero:
    fichero.write(f"Nombre: Marta,  Media: 7.1, Aprobado: Si\n")
    fichero.write(f"Nombre: Carlos,  Media: 3.9, Aprobado: No\n")
 
-#hazme un algortimo para solicitar el nombre de un alumno y mostrar sus datos
+#quiero que aparexca el fichero de alumnos completo por pantalla 
+with open("alumnos.txt", "r") as fichero: 
+    contenido = fichero.read()
+    print(contenido)
 
+#Como accedo a los elementos de un fichero linea a linea
 with open("alumnos.txt", "r") as fichero:
-   fichero.read()
+      for linea in fichero:
+         print(linea.strip())
 
+#Como accedo a una URL y muestro su contenido por pantalla
+import requests
+url = "http://example.com"
+response = requests.get(url)
+print(response.text)
 
 
 
