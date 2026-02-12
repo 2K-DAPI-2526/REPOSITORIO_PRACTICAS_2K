@@ -9,16 +9,12 @@
 
 class personaje:
     
-    def __init__(self, nombre, fuerza, vida=100, nivel=1, magia=0, punteria=0, resistencia=0, velocidad=0, inteligencia=0):    
+    def __init__(self, nombre, fuerza, vida=100, nivel=1):    
         self.nombre = nombre
         self.fuerza = fuerza
         self.vida = vida
         self.nivel = nivel
-        self.magia = magia
-        self.punteria = punteria
-        self.resistencia = resistencia
-        self.velocidad = velocidad
-        self.inteligencia = inteligencia
+
 #------------------MÉTODOS DE LA CLASE PERSONAJE------------------#
 #Estos métodos serán heredados por las clases guerrero, arquero, mago y ladrón, pero cada clase tendrá un atributo adicional que mejora en un 10% al pertenecer a esa clase. Por ejemplo, el guerrero tendrá un atributo de resistencia que se mejora en un 10%, el arquero tendrá un atributo de puntería que se mejora en un 10%, el mago tendrá un atributo de magia que se mejora en un 10% y el ladrón tendrá un atributo de inteligencia que se mejora en un 10%.
 
