@@ -11,25 +11,29 @@ import Definicion_personajes
 
 #-------------VAMOS A DEFINIR LAS CLASES-----------------#
 
+magia=0, punteria=0, resistencia=0, velocidad=0, inteligencia=0
+
 class guerrero(Definicion_personajes.personaje):
-    def __init__(self, nombre, fuerza, velocidad, vida =100, inteligencia = 100):
-        super().__init__(nombre, fuerza, velocidad, vida,inteligencia)
-        
+    def __init__(self, nombre, fuerza, vida=100, nivel=1, resistencia=0):
+        super().__init__(nombre, fuerza, vida, nivel)
+        self.resistencia = resistencia * 1.1  # Aumento del 10% por ser guerrero
 
 class arquero(Definicion_personajes.personaje):
-    def __init__(self, nombre, fuerza, velocidad, vida =100, resistencia = 100):
-        super().__init__(nombre, fuerza, velocidad, vida)
-        self.resistencia = resistencia
+    def __init__(self, nombre, fuerza, velocidad, vida =100, punteria = 100):
+        super().__init__(nombre, fuerza, vida, nivel=1)
+        self.punteria = punteria * 1.1  # Aumento del 10% por ser arquero
+        self.velocidad = velocidad * 1.1  # Aumento del 10% por ser arquero
 
 class mago(Definicion_personajes.personaje):
-    def __init__(self, nombre, fuerza, velocidad, vida =100, magia = 100):
-        super().__init__(nombre, fuerza, velocidad, vida)
-        self.magia = magia
+    def __init__(self, nombre, fuerza, vida =100, magia = 100):
+        super().__init__(nombre, fuerza, vida, nivel=1)
+        self.magia = magia * 1.1  # Aumento del 10% por ser mago
 
 class ladron(Definicion_personajes.personaje):
     def __init__(self, nombre, fuerza, velocidad, vida =100, inteligencia = 100):
-        super().__init__(nombre, fuerza, velocidad, vida)
-        self.inteligencia = inteligencia
+        super().__init__(nombre, fuerza, vida, nivel=1)
+        self.velocidad = velocidad * 1.1  # Aumento del 10% por ser ladrón
+        self.inteligencia = inteligencia * 1.1  # Aumento del 10% por ser ladrón
 
 
 #Una vez definidas las clases, podemos crear personajes de cada clase y probar sus habilidades. Por ejemplo:
