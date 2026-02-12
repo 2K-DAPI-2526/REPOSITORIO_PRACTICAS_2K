@@ -13,8 +13,8 @@ import Definicion_personajes
 
 class guerrero(Definicion_personajes.personaje):
     def __init__(self, nombre, fuerza, velocidad, vida =100, inteligencia = 100):
-        super().__init__(nombre, fuerza, velocidad, vida)
-        self.inteligencia = inteligencia
+        super().__init__(nombre, fuerza, velocidad, vida,inteligencia)
+        
 
 class arquero(Definicion_personajes.personaje):
     def __init__(self, nombre, fuerza, velocidad, vida =100, resistencia = 100):
