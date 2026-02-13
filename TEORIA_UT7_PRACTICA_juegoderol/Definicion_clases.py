@@ -1,4 +1,4 @@
-import Definicion_personajes  
+import TEORIA_UT7_PRACTICA_juegoderol.Definicion_personajes as Definicion_personajes  
 
 #Definición de clases: Cada clase, tendrá los atributos que comparten la clase personajes y además ganarán un atributo por pertenecer a esa clase.
 #Si eres arquero, tienes un 10% más de puntería y un 10% más de velocidad
