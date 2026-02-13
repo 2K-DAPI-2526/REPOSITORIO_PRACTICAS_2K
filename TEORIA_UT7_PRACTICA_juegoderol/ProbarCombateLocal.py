@@ -1,4 +1,4 @@
-from TEORIA_UT7_PRACTICA_juegoderol.Definicion_clases import guerrero, arquero, mago, ladron
+From Definicion_clases import guerrero, arquero, mago, ladron
 
 mago1=mago("Gandalf", 100, 20, 10)
 guerrero1=guerrero("Aragorn", 120, 25, 15)
