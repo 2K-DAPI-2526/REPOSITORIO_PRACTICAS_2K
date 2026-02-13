@@ -11,8 +11,6 @@ import Definicion_personajes
 
 #-------------VAMOS A DEFINIR LAS CLASES-----------------#
 
-magia=0, punteria=0, resistencia=0, velocidad=0, inteligencia=0
-
 class guerrero(Definicion_personajes.personaje):
     def __init__(self, nombre, fuerza, vida=100, nivel=1, resistencia=0):
         super().__init__(nombre, fuerza, vida, nivel)
